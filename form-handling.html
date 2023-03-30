@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Form-Handlings</title>
+    <style>
+        body {
+            background-color: rgb(228, 228, 228);
+            background: url("./images/bg.jpg") no-repeat center center/cover;
+            height: 200vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            font-family: monospace;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        .card {
+            width: 500px;
+            height: auto;
+            border-radius: 10px;
+            padding: 10px 90px 90px 90px;
+            background-color: white;
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+            box-shadow: 0 2px 2px 1px black;
+        }
+
+        .input {
+            margin: 10px 0px 10px 0px;
+            height: 20px;
+            padding: 5px 20px;
+            border-radius: 3px;
+            outline: none;
+            font-family: monospace;
+            font-weight: bold;
+        }
+
+        label,
+        p {
+            font-family: monospace;
+            font-weight: bolder;
+            font-size: 15px;
+        }
+        
+        .gender-section {
+            display: flex;
+            flex-direction: column;
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .phone{
+            margin: 10px 0px 10px 0px;
+        }
+        
+        .flex-row{
+            display: flex;
+            
+        }
+        #ph-code{
+            width:39px;
+            margin-right: 5px;
+            user-select: none;
+            font-family: monospace;
+            font-weight: bold;
+            color: rgb(204, 204, 204);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="title">Student Registration Form</h1>
+            <label for="first-name">First Name:</label>
+            <input type="text" name="first-name" class="input" placeholder="Enter your First Name">
+            <label for="middle-name">Middle Name:</label>
+            <input type="text" name="middle-name" class="input" placeholder="Enter your Middle Name">
+            <label for="last-name">Last Name:</label>
+            <input type="text" name="last-name" class="input" placeholder="Enter your Last Name">
+            <label for="course">Course</label>
+            <select name="course" id="" style="font-family:monospace;font-weight:bold;height:30px;border-radius: 5px;">
+                <option value="be">B.E</option>
+                <option value="btech" selected>B.tech</option>
+                <option value="mba">MBA</option>
+                <option value="bba">BBA</option>
+                <option value="msc">MSc</option>
+                <option value="bsc">BSc</option>
+            </select>
+            <div class="gender-section">
+                <p>Gender:</p>
+                <span>
+                    <input type="radio" name="male" value="Male" id="">
+                    Male
+                </span>
+                <span>
+                    <input type="radio" name="male" value="Male" id="">
+                    Female
+                </span>
+                <span>
+                    <input type="radio" name="male" value="Male" id="">
+                    Dont want to mention
+                </span>
+                <div class="phone flex-row">
+                    <span>
+                        Phone: <input type="text"  id="ph-code" value="+91" readonly><input type="text" name="" id="" style="font-family:monospace;font-weight:bold;">
+                    </span>
+                </div>
+                <p>Address:</p>
+                <textarea name="" id="" cols="20" rows="10"></textarea>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
